@@ -1,0 +1,228 @@
+Practical-1
+
+RPA Basics: Sequences and Flowcharts: 
+1a. Create a simple sequence-based project. 
+Step-1: click on Process
+Step-2: Give name to the practical and click on create
+Step-3: Go to Search activities on the activities bar:
+Step-4: Drag and drop the sequence option in the main file
+Step-5: Then drag and drop the two input dialog box and message box in sequence box
+Step-6: Then print names as an example of sequence-based project 
+a) Write “PrintingNames” in  both input dialog box at Dialog Title option. 
+b) Write “FrirstName” in first input dialog box and write “Lastname” in second input 
+dialog box at input label option 
+c) Select input type text box 
+d) Put FirstName at value entered option in first input dialog box and put LastName at 
+value entered option at second input dialog box. 
+e) Write FirstName+””+Lastname in text option of message box 
+f) Then click on Debug file option at the top left
+
+1b. Create a flowchart-based project. 
+Step-1: click on Process
+Step-2: Give name to the practical and click on create
+Step-3: Go to drop down of new and click on flowchart.
+Step-4: Give name and save the file.
+Step-5: Make an simple flow chart by printing your full name or college name by using  
+a) An input dialog box: 
+Double click on input dialog box, then fill the details and set result value. 
+b) Message box: 
+Write the result value in text* section of message box. 
+Then connect flow char arrow to each box and click on debug file.
+1c. Automate UiPath Number Calculation (Subtraction, Multiplication, Division of 
+numbers). 
+Step-1: click on Process 
+Step-2: Give name to the practical and click on create
+Step-3: make main file as an given steps as follows (drag and drog all option from activity 
+search option): 
+a) Sequence box 
+b) Two input dialog boxes 
+Give values of input and set variable as Firstnum and Secondnum. 
+c) Four Message boxes: 
+Insert the value of text as "Division"+" "+(Firstnum/Secondnum).ToString.
+Step-4: Then click on debug file and run the sequence
+
+
+Practical No. 3 
+
+2a. Consider an array of names. We have to find out how many of them start with the letter 
+"a". Create an automation where the number of names starting with "a" is counted and the 
+result is displayed. 
+Step-1: click on Process
+Step-2: Give name to the practical and click on create
+Step-3: create a sequence by using activity search column
+Step-4: select assign option from search activities option
+Step-5: set variables and give random names in value to save option in assign box
+Step-6: select for each option from search activities
+Step-7: The further steps are as follows:
+a) define names value in variables in for each current text. 
+b) Set an assign box inside body of an for each current text.  
+[value to save-currentText.Substring(0, 1)] 
+c) Set an If condition on condition* [firstletter.ToLower.Equals("a")]. 
+d) Follow the image for further commands and reference.
+Step-8: Click on debug file and run the sequence
+
+2b. Demonstrate switch statement with an example.
+Step-1: click on Process
+Step-2: Give name to the practical and click on create
+Step-3: The sequence model are as follows: 
+a) Make an sequence box by using search activities 
+b) Then make an input dialog box  
+c) Then give five switch statement in switch option provided by search activities 
+d) Set variable value as number 
+e) Follow the image for sequence model 
+Click on debug file and run the sequence. 
+
+2c. Create an automation To Print numbers from 1 to 10 with break after the writeline 
+activity inside for each activity
+Step-1: click on Process
+Step-2: Give name to the practical and click on create
+Step-3: select the options as follows: 
+a) First select the sequence option. 
+b) Then select the do while option from search activities  
+c) Select the write line option and drag in side the body option 
+d) Connect the assign box  to the write line  
+e) Define the variable Int 
+f) Give condition as Int<11 
+Step-4: click on debug file option and get the output
+
+
+Practical 4
+Types of Recording:  
+a) Basic Recording using Toolbar and working with the toolbar  
+Install UiPath.UIAutomation.Activities  package if App/web recorder 
+activity is missing. 
+Step -1: Select the Sequence 
+Step 2: Open Notepad in background  
+Step 3: Click on App/Web recorder 
+Step 4: Add the text that you want to display. 
+Step 5: The text will be displayed and recorded successfully.  
+Step 6: Working with the tool bar activate the “Format” and then “Font” to 
+display the text and another font with various text sizes.  
+Step 7: Click on notepad again to capture the text area after than add again 
+value to display the text in updated format which we have selected. 
+Step 8: Click on save button and then activate the “Debug file” button to 
+display the output 
+
+
+b) Desktop Recording using Tool bar   
+Step -1: Select the Sequence 
+Step 2: Open the Google chrome in background  
+Step 3: Drag the Use Application/Browser entity. 
+Step 4: Select the browser  
+Step 5: Select the Use Application/Browser and activate “properties” present 
+in the left navigation.  
+Step 6: Select the Option close to “Never” and then Input Mode should be 
+“Hardware event”.  
+Step 7: Click on App/Web recorder to record the screen  
+
+If the extension is not installed then click on “Install”. And select the screen to record 
+it.   
+
+
+Step 9: Click on save button and then activate the “Debug file” button to 
+display the output 
+
+
+Practical 5 
+A. Automate the process to extract data from an excel file into a data table and vice versa.  
+1) Excel file to Data Table  
+a) Create New Blank Process and name it.  
+
+b) Go to rpachallenge.com and download the challenge excel file and place it in the same 
+folder as the main folder. 
+c) Create a New Sequence and name it. 
+d) Add Read Range Workbook Activity to the sequence. 
+e) Select challenge.xlsx. 
+f) Configure the Activity 
+g) Add Use Application/Browser activity and configure it. 
+h) Add For Each Row in Data Table in the Use Application/Browser activity body. 
+i) 
+Add Click and Type Into activities for all the buttons and Text Field Boxes respectively. 
+
+
+
+
+
+Practical 6
+Different controls in UiPath:
+5a. Implement the attach window activity.(attach window is now replace with use 
+Application/Browser) 
+Step-1: click on Process
+Step-2: Give name to the practical and click on create
+Step-3: To create an use Application/Browser activity perform the steps as follows 
+a) First make an flow chart 
+b) Then make an sequence box 
+c) Inside sequence box make an use application/Browser activity  
+d) Then click on indicate application to automate (click on blank notepad) 
+e) There is an Do option in the use application/browser activity, drag an untitled notepad 
+f) Write the content in type this option (“Automating through uipath”) 
+g) Click on debug file then the notepad will be open by automation and the text will be 
+written by automation as Automating through uipath.
+
+5b. Automate using Anchor Base. (Anchor base is updated in advance from as  
+use Application/Browser) 
+
+Input: follow same steps as practical 5a and add find element option for finding the 
+search address in web browser example
+
+Output: we are getting an output of automation typing in browser and searching the 
+search option in chrome by find element option
+
+5c. Automate using Element Exists. (Element exists activity is been updated by check 
+app state) 
+Step-1: use the website https://rpachallenge.com/ for automation
+Step-2: click on Process
+Step-3: Give name to the practical and click on create
+Step-4: follow the image for giving the sequence and functionality to check app state 
+automation. 
+Step-6: click on debug file and see the use application/browser and check app state 
+automation. 
+a) First it goes to start > Round1 
+b) It types the address as Mulund college of commerce 
+c) Then click on submit button 
+d) If target does not appears it shows the same loop of point a) to c).
+Step-7: see the work flow of automation step by step in image
+
+5d. Automate using Find Children control. 
+Step-1: use website” https://acme-test.uipath.com/vendors/inventory/”
+
+Step-3: Blanks are inventory code which are not displayed because of security reasons.
+
+
+5e. Use Get Ancestor control 
+Step-1:
+
+
+Practical 7 
+A. Screen Scraping and Web Scraping methods.  
+a) Create new process and name it.  
+b) Create a new sequence and name it. 
+c) Install UI Automation package in UI Path. 
+d) Add Use Application/Browser activity and configure it to open amazon.in 
+e) Add Type Into activity to search for iPhone into search bar. 
+f) Start Table Extraction to automate data Scraping. 
+g) Just Like Name configure other information that is to be collected. 
+h) Add Single Excel Process Scope, Use Excel File and Write Data Table to Excel and 
+configure it to save the data table to excel file. 
+i) 
+Remove verification for Type Into as the automation crashes. 
+j) View the output in excel file  
+
+
+Practical 8 
+7a. Automate the following screen scraping methods using UiPath: 
+a. Full Text and Native (Replaced by get text) 
+Step-1: use browser/application and indicate to notepad
+Step-2: get text from search activities and indicate to file option, click on highlighted part and 
+click on preview extraction.
+Step-3: set on full text
+
+7c. Demonstrate Screen Scraping (use application/browser) for a pdf.
+Step1: open a sample pdf in adobe reader.
+Step2: set variable
+Step3: output
+
+Practical 9 
+Step1: Install email package through package manager
+
+
